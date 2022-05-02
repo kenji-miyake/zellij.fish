@@ -1,4 +1,4 @@
-# PLUGIN_NAME.fish
+# zellij.fish
 
 ## Prerequisites
 
@@ -9,14 +9,14 @@
 ### Using fisher (recommended)
 
 ```sh
-fisher add kenji-miyake/PLUGIN_NAME.fish
+fisher install kenji-miyake/zellij.fish
 ```
 
 ### Using local-install script (for development)
 
 ```sh
-git clone git@github.com:kenji-miyake/PLUGIN_NAME.fish.git
-cd PLUGIN_NAME.fish
+git clone git@github.com:kenji-miyake/zellij.fish.git
+cd zellij.fish
 ./install
 ```
 
