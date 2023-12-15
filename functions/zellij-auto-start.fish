@@ -7,7 +7,7 @@ function zellij-auto-start
     set new_number (math "$current_number" + 1)
 
     if $ZELLIJ_AUTO_START
-        zellij -s "automatic-$new_number"
+        zellij -s "automatic-$new_number" || exit
 
         if $ZELLIJ_AUTO_EXIT
             kill $fish_pid
