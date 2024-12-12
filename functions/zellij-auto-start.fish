@@ -1,6 +1,5 @@
 function zellij-auto-start
-    set -q ZELLIJ && return
-    set -q VSCODE_GIT_IPC_HANDLE && return
+    set -q ZELLIJ_PANE_ID && return
 
     set current_number (zellij list-sessions | rg "automatic-(\w+)" -or '$1' | sort -rV | head -n 1)
     test -z "$current_number" && set current_number 0
