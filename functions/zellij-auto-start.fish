@@ -1,5 +1,5 @@
 function zellij-auto-start
-    set -q ZELLIJ_PANE_ID && return
+    set -q ZELLIJ_SESSION_NAME && return
 
     set -U ZELLIJ_DISABLE_AUTO_EXIT_ONLY_ONCE false
 
