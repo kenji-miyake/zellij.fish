@@ -1,5 +1,5 @@
 function zellij-auto-start
-    set -q ZELLIJ_SESSION_NAME && return
+    set -q ZELLIJ && return
 
     set -U ZELLIJ_DISABLE_AUTO_EXIT_ONLY_ONCE false
 
@@ -16,4 +16,6 @@ function zellij-auto-start
             end
         end
     end
+
+    ZELLIJ=0 exec fish
 end
